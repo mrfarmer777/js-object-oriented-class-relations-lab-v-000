@@ -22,6 +22,7 @@ class Driver{
      console.log(trip.passenger());
      passengers.push(trip.passenger());
    });
+   return passengers;
   }
    
 }
