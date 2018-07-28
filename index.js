@@ -9,13 +9,13 @@ class Driver{
   }
   
   trips(){
+    let drv_trips=[];
     store.trips.filter(function(trip){
-      let drv_trips=[];
       if(trip.driver_id==this.id){
         drv_trips.push(trip);
       }
     });
-    
+    return drv_trips;
   }
 }
 
@@ -28,11 +28,15 @@ class Passenger{
   }
   
   trips(){
+    let pass_trips=[];
     store.trips.filter(function(trip){
-      let pass_trips=[];
       if(trip.pass_id==this.id){
         pass_trips.push(trip);
       }
     });
+    return pass_trips;
   }
 }
+
+
+
