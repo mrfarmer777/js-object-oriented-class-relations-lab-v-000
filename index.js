@@ -19,7 +19,7 @@ class Driver{
    let myTrips=this.trips();
    myTrips.forEach(function(trip){
      console.log(trip);
-     console.log(trip.passenger();)
+     console.log(trip.passenger());
      passengers.push(trip.passenger());
    });
   }
