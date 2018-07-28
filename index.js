@@ -48,16 +48,14 @@ class Trip{
   }
   
   driver(){
-    store.drivers.find(function(drv){
-      return (drv.id==this.driverId);
+    return store.drivers.find(function(drv){
+      return (drv.id===this.driverId);
     });
   }
   
   passenger(){
-    store.passengers.find(function(pass){
-      if(pass.id==this.passengerId){
-        return pass;
-      }
+    return store.passengers.find(function(pass){
+      return (pass.id===this.passengerId);
     });
   }
 }
