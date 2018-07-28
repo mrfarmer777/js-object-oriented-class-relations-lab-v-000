@@ -26,16 +26,15 @@ class Passenger{
   }
   
   trips(){
+    let goalId=this.id;
     return store.trips.filter(trip=>{
-      return trip.passengerId===this.id;
+      return trip.passengerId===goalId;
     });
   }
   
   drivers(){
-    let drvs=[];
-    for(const trip in this.trips){
-      drvs.push(trip.driver);
-    }
+    let goalId=this.id;
+    return store.drivers.filet(trip=>)
   }
 }
 
