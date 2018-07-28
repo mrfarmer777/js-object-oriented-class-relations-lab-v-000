@@ -56,7 +56,7 @@ class Trip{
   passenger(){
     let goalId=this.passengerId;
     return store.passengers.find(function(pass){
-      return pass.id === passengerId;
+      return pass.id === goalId;
     });
   }
 }
