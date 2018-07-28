@@ -24,14 +24,10 @@ class Passenger{
   }
   
   trips(){
-    let pass_trips=[];
-    store.trips.filter(function(trip){
-      if(trip.pass_id==this.id){
-        pass_trips.push(trip);
-      }
-    });
-    return pass_trips;
-  }
+      return store.trips.filter(trip=>{
+        return trip.driverId===this.id;
+      });
+    }
 }
 
 let trip_id=0;
