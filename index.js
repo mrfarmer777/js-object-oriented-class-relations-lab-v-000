@@ -38,5 +38,29 @@ class Passenger{
   }
 }
 
-
+let trip_id=0;
+class Trip{
+  constructor(driver_id,pass_id){
+    this.id=++trip_id;
+    this.driver_id=driver_id;
+    this.pass_id=pass_id;
+    store.trips.push(this);
+  }
+  
+  driver(){
+    store.drivers.find(function(drv){
+      if(drv.id==this.driver_id){
+        return drv;
+      }
+    });
+  }
+  
+  passenger(){
+    store.passengers.find(function(pass){
+      if(pass.id==this.passenger_id){
+        return pass;
+      }
+    });
+  }
+}
 
