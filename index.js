@@ -49,9 +49,9 @@ class Trip{
   }
   
   driver(){
-    let goalId=this.id
+    let goalId=this.id;
     return store.drivers.find(function(drv){
-      console.log(this);
+      console.log(goalId);
       return drv.id === goalId;
     });
   }
