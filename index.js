@@ -13,6 +13,13 @@ class Driver{
       return trip.driverId===this.id;
     });
   }
+  
+  passengers(){
+   let goalId=this.id;
+   return store.passengers.filter(passenger=>{
+     return passenger.driverId===this.id;
+   });
+  }
 }
 
 let pass_id=0;
