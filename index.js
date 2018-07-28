@@ -15,11 +15,9 @@ class Driver{
   }
   
   passengers(){
-   let goalId=this.id;
-   return store.passengers.filter(passenger=>{
-     return passenger.driverId===this.id;
-   });
+   return this.trips;
   }
+   
 }
 
 let pass_id=0;
