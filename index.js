@@ -15,6 +15,7 @@ class Driver{
         drv_trips.push(trip);
       }
     });
+    
   }
 }
 
