@@ -9,13 +9,9 @@ class Driver{
   }
   
   trips(){
-    let drv_trips=[];
-    store.trips.filter(function(trip){
-      if(trip.driver_id==this.id){
-        drv_trips.push(trip);
-      }
+    return store.trips.filter(trip=>{
+      return trip.driverId===this.id;
     });
-    return drv_trips;
   }
 }
 
