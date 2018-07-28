@@ -40,16 +40,16 @@ class Passenger{
 
 let trip_id=0;
 class Trip{
-  constructor(driver_id,pass_id){
+  constructor(driverId,passId){
     this.id=++trip_id;
-    this.driver_id=driver_id;
-    this.pass_id=pass_id;
+    this.driverId=driverId;
+    this.passId=passId;
     store.trips.push(this);
   }
   
   driver(){
     store.drivers.find(function(drv){
-      if(drv.id==this.driver_id){
+      if(drv.id==this.driverId){
         return drv;
       }
     });
@@ -57,7 +57,7 @@ class Trip{
   
   passenger(){
     store.passengers.find(function(pass){
-      if(pass.id==this.passenger_id){
+      if(pass.id==this.passengerId){
         return pass;
       }
     });
