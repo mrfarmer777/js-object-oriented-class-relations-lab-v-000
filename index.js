@@ -28,6 +28,10 @@ class Passenger{
       return trip.passengerId===this.id;
     });
   }
+  
+  drivers(){
+    return this.trips.drivers();
+  }
 }
 
 let trip_id=0;
