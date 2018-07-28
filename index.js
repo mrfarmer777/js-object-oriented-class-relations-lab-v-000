@@ -49,7 +49,7 @@ class Trip{
   }
   
   driver(){
-    let goalId=this.id;
+    let goalId=this.driver_id;
     console.log(store["drivers"]);
     console.log(store["passengers"]);
     return store.drivers.find(function(drv){
