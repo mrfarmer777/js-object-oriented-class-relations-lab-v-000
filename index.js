@@ -50,7 +50,7 @@ class Trip{
   
   driver(){
     let goalId=this.driver_id;
-    return store.drivers.find(d => d.id===goalId);
+    return store.drivers.find(d => d.id==goalId);
   }
   
   passenger(){
