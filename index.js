@@ -27,9 +27,7 @@ class Passenger{
   
   trips(){
     let goalId=this.id;
-    return store.trips.filter(trip=>{
-      return trip.passengerId===goalId;
-    });
+    return store.trips.filter(trip=> trip.passengerId===goalId);
   }
   
   drivers(){
