@@ -43,8 +43,12 @@ class Passenger{
   }
   
   drivers(){
-    let goalId=this.id;
-    return store.drivers.filter(trip=> trip.driverId===goal);
+    let drivers=[];
+    const myTrips=this.trips();
+    myTrips.forEach(function(trip){
+      drivers.push(trip.driver());
+    });
+    return drivers;
   }
 }
 
