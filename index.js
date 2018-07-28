@@ -49,10 +49,10 @@ class Trip{
   }
   
   driver(){
-    console.log(this);
+    let goalId=this.id
     return store.drivers.find(function(drv){
       console.log(this);
-      return drv.id === this.driverId;
+      return drv.id === goalId;
     });
   }
   
