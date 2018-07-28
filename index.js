@@ -24,10 +24,10 @@ class Passenger{
   }
   
   trips(){
-      return store.trips.filter(trip=>{
-        return trip.driverId===this.id;
-      });
-    }
+    return store.trips.filter(trip=>{
+      return trip.driverId===this.id;
+    });
+  }
 }
 
 let trip_id=0;
