@@ -48,7 +48,7 @@ class Trip{
   
   driver(){
     return store.drivers.find(function(drv){
-      return (drv.id===this.driverId);
+      return drv.id===this.driverId;
     });
   }
   
