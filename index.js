@@ -51,8 +51,9 @@ class Trip{
   driver(){
     let goalId=this.id;
     return store.drivers.find(function(drv){
-      console.log(goalId);
-      return drv.id === goalId;
+      if(drv.id === goalId){
+        return drv;
+      }
     });
   }
   
