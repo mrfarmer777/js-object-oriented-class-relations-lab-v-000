@@ -30,7 +30,10 @@ class Passenger{
   }
   
   drivers(){
-    return this.trips.drivers();
+    let drvs=[];
+    for(const trip in this.trips){
+      drvs.push(trip.driver);
+    }
   }
 }
 
