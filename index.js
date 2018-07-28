@@ -32,7 +32,7 @@ class Passenger{
   
   drivers(){
     let goalId=this.id;
-    return store.drivers.filet(trip=> trip.driverId===goal);
+    return store.drivers.filter(trip=> trip.driverId===goal);
   }
 
 let trip_id=0;
