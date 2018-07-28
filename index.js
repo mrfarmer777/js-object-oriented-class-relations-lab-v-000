@@ -1,5 +1,5 @@
 let drv_id=0;
-store={drivers:[], trips:[]};
+store={drivers:[], trips:[], passengers:[]};
 class Driver{
   constructor(name){
     this.id=++drv_id;
